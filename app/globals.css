@@ -136,3 +136,8 @@ html {
 body {
   min-height: 100%;
 }
+
+:root {
+  --color-header: #1d253c;
+  --color-text: #666;
+}

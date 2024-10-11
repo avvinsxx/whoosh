@@ -1,0 +1,9 @@
+.block {
+  padding: 54px 16px 48px;
+}
+
+@media (min-width: 768px) {
+  .block {
+    padding: 98px 0px 96px;
+  }
+}

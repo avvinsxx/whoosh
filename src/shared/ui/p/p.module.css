@@ -1,0 +1,6 @@
+.p {
+  font-family: var(--font-intro-book);
+  color: var(--color-text);
+  font-size: 16px;
+  line-height: 24px;
+}

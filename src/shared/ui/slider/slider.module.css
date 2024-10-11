@@ -1,0 +1,27 @@
+.slider {
+  margin-top: 26px;
+}
+
+.slider__slide {
+  height: 56px;
+  width: 188px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider__image {
+  max-height: 100%;
+  filter: grayscale(1);
+  transition: filter 0.3s;
+}
+
+.slider__image_active {
+  filter: grayscale(0);
+  transition: filter 0.3s;
+}
+
+.slider__image:hover {
+  filter: grayscale(0);
+  transition: filter 0.3s;
+}

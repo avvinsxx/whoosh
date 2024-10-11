@@ -1,0 +1,18 @@
+.divider {
+  height: 0;
+  border: 1px solid;
+  border-color: #c2d2f4 #b7c6e7;
+  position: relative;
+}
+
+.divider::before {
+  content: "";
+  background: no-repeat center url("./package.svg") white;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, -50%);
+  display: block;
+  width: 100px;
+  height: 28px;
+}
