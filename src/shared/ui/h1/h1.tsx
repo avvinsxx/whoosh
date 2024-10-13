@@ -1,5 +1,11 @@
+import clsx from "clsx";
 import styles from "./h1.module.css";
 
-export function H1({ children }: { children: React.ReactNode }) {
-  return <h1 className={styles.h1}>{children}</h1>;
+interface H1Props {
+  align?: "center" | "left";
+  children: React.ReactNode;
+}
+
+export function H1({ align = "center", children }: H1Props) {
+  return <h1 className={clsx(styles.h1, styles["h1_" + align])}>{children}</h1>;
 }

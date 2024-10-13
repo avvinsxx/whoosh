@@ -1,0 +1,33 @@
+.button {
+    width: 296px;
+    max-width: 100%;
+    height: 48px;
+    border-radius: 32px;
+    font-size: 18px;
+    line-height: 32px;
+    border: none;
+    cursor: pointer;
+    font-family: var(--font-intro);
+}
+
+.button_yellow {
+    color: #1D253C;
+    background-color: #FFDD2D;
+}
+
+.button_yellow:hover,
+.button_yellow:focus {
+    color: #fff;
+    transition: color .5s;
+}
+
+.button_blue {
+    background-color: #2B6BF3;
+    color: #fff;
+}
+
+.button_blue:hover,
+.button_blue:focus {
+    background-color: #1252DB;
+    transition: background-color .5s;
+}

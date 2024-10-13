@@ -3,8 +3,15 @@
   color: var(--color-header);
   font-size: 24px;
   font-weight: bold;
-  text-align: center;
   line-height: 32px;
+}
+
+.h1_center {
+  text-align: center;
+}
+
+.h1_left {
+  text-align: left;
 }
 
 @media (min-width: 768px) {

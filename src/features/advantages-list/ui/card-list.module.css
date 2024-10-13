@@ -1,0 +1,15 @@
+.card-list {
+  margin-top: 31px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 36px;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .card-list {
+    margin-top: 39px;
+    gap: 50px;
+  }
+}

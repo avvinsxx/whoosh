@@ -1,0 +1,87 @@
+.delivery-type {
+    width: 100%;
+    margin-top: 17px;
+    display: flex;
+}
+
+.delivery-type__button {
+    background-color: #EFF4FF;
+    width: 96px;
+    min-height: 56px;
+    border-left: none;
+    border-right: none;
+    box-sizing: border-box;
+    border-top: 1px solid #B7C6E7;
+    border-bottom: 1px solid #B7C6E7;
+    padding: 52px 0 0;
+    cursor: pointer;
+}
+
+.delivery-type__button:first-child,
+.delivery-type__button:last-child {
+    width: 100px;
+    border: 1px solid;
+    border-color: #C2D2F4 #B7C6E7;
+}
+
+.delivery-type__button:first-child {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.delivery-type__button:last-child {
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.delivery-type__button_foot {
+    background: no-repeat top center url('./assets/foot.svg');
+}
+
+.delivery-type__button_car {
+    background: no-repeat top center url('./assets/car.svg');
+}
+
+.delivery-type__button_truck {
+    background: no-repeat top center url('./assets/truck.svg');
+}
+
+.delivery-type__button:first-child.delivery-type__button_active,
+.delivery-type__button:last-child.delivery-type__button_active,
+.delivery-type__button_active {
+    background-color: #fff;
+    border-color: #2B6BF3;
+    border-width: 2px;
+    border-style: solid;
+}
+
+.delivery-type__label {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .delivery-type {
+        margin-top: 20px;
+    }
+
+    .delivery-type__button:hover {
+        opacity: 70%;
+    }
+
+    .delivery-type__button {
+        height: 84px;
+    }
+
+    .delivery-type__label {
+        display: block;
+        font-family: var(--font-intro);
+        color: rgb(29, 37, 60, 48%);
+        font-size: 12px;
+        line-height: 24px;
+        margin-bottom: 8px;
+    }
+
+    .delivery-type__button_active .delivery-type__label {
+        color: #1d253c;
+    }
+}

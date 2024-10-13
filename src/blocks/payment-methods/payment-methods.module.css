@@ -1,0 +1,9 @@
+.payment-methods {
+    padding: 54px 0 64px;
+}
+
+@media (min-width: 768px) {
+    .payment-methods {
+        padding: 98px 0px 96px;
+    }
+}

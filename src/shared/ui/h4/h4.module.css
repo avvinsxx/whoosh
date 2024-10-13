@@ -6,6 +6,7 @@
   text-align: center;
   opacity: 48%;
   margin-top: 11px;
+  max-width: 754px;
 }
 
 @media (min-width: 768px) {

@@ -1,0 +1,10 @@
+.clear-button {
+    font-family: var(--font-intro);
+    font-size: 16px;
+    line-height: 24px;
+    border: none;
+    color: #999;
+    padding-left: 16px;
+    background: no-repeat left center url('./assets/cross.svg');
+    cursor: pointer;
+}

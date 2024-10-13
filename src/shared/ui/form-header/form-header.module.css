@@ -1,0 +1,6 @@
+.h3 {
+  font-family: var(--font-intro);
+  color: var(--color-header);
+  font-size: 22px;
+  line-height: 32px;
+}

@@ -1,0 +1,12 @@
+.partners {
+    padding: 54px 0 48px;
+}
+
+@media (min-width: 768px) {
+    .partners {
+        padding: 98px 0px 47px;
+        position: relative;
+        max-width: 1160px;
+        margin: auto;
+    }
+}

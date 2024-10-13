@@ -1,0 +1,14 @@
+.link {
+    color: #2B6BF3;
+    text-decoration: none;
+}
+
+.link_underline {
+    text-decoration: underline;
+}
+
+.link:hover {
+    opacity: 70%;
+    text-decoration: none;
+    transition: opacity .3s;
+}

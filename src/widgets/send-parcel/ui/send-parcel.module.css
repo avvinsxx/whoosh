@@ -1,0 +1,68 @@
+.send-parcel {
+    width: auto;
+    padding: 39px 14px 24px;
+    max-width: 360px;
+    border: 2px solid;
+    border-color: #C2D2F4 #B7C6E7;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0px 8px 16px 0px #2B6BF314;
+}
+
+.send-parcel__header {
+    display: flex;
+    align-items: center;
+}
+
+.send-parcel__input {
+    margin-top: 37px;
+}
+
+.send-parcel__button {
+    margin-top: 40px;
+}
+
+.send-parcel__button-clear {
+    margin-top: 16px;
+    text-align: center;
+}
+
+.send-parcel__info {
+    position: relative;
+}
+
+.send-parcel__info-icon {
+    fill: #DDE7FD;
+    margin-left: 16px;
+}
+
+.send-parcel__info-icon:hover {
+    fill: #1D253C;
+    transition: fill .3s;
+}
+
+.send-parcel__info-icon:hover+.send-parcel__info-message {
+    display: block;
+}
+
+.send-parcel__info-message {
+    border: 1px solid;
+    border-image-source: #C2D2F4 #B7C6E7;
+    background: #fff;
+    padding: 8px 16px;
+    width: 252px;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .send-parcel {
+        padding: 39px 30px 24px;
+    }
+
+    .send-parcel__input_sm-margin {
+        margin-top: 34px;
+    }
+}

@@ -1,0 +1,30 @@
+.advantages {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 54px 16px 48px;
+    background: linear-gradient(293.74deg, #F8FAFF 34.3%, #F2F6FF 99.57%);
+}
+
+.advantages_button-container {
+    margin-top: 36px;
+}
+
+@media (min-width: 768px) {
+    .advantages {
+        padding: 74px 0 72px;
+        border-top-left-radius: 25% 30%;
+        border-bottom-left-radius: 25% 30%;
+        position: relative;
+    }
+
+    .advantages:after {
+        content: '';
+        background: no-repeat url("./adv-bg.png");
+        position: absolute;
+        top: -72px;
+        right: 0;
+        width: 183px;
+        height: 504px;
+    }
+}

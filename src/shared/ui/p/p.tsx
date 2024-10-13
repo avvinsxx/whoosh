@@ -1,5 +1,11 @@
+import clsx from "clsx";
 import styles from "./p.module.css";
 
-export function P({ children }: { children: React.ReactNode }) {
-  return <p className={styles.p}>{children}</p>;
+interface PProps {
+  type?: "regular" | "small";
+  children: React.ReactNode;
+}
+
+export function P({ type = "regular", children }: PProps) {
+  return <p className={clsx(styles.p, styles["p_" + type])}>{children}</p>;
 }

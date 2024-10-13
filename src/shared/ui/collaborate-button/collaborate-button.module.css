@@ -1,0 +1,35 @@
+.collaborate-button {
+    width: 328px;
+    font-family: var(--font-intro-book);
+    font-size: 16px;
+    line-height: 24px;
+    color: #1D253C;
+    border: 1px solid #DDE7FD;
+    border-radius: 24px;
+    background: none;
+    display: block;
+    margin: auto;
+    margin-top: 48px;
+    padding: 7px 0;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.collaborate-button:hover,
+.collaborate-button:focus {
+    opacity: 70%;
+}
+
+@media (min-width: 768px) {
+    .collaborate-button {
+        margin: 0;
+        width: auto;
+        padding: 7px 17px;
+        right: 0;
+        top: 96px;
+        position: absolute;
+    }
+}
