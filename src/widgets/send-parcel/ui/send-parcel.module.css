@@ -3,10 +3,10 @@
   padding: 39px 14px 24px;
   max-width: 360px;
   border: 2px solid;
-  border-color: #c2d2f4 #b7c6e7;
+  border-color: var(--color-gray);
   border-radius: 8px;
   background: #fff;
-  box-shadow: 0px 8px 16px 0px #2b6bf314;
+  box-shadow: 0px 8px 16px 0px var(--color-blue) 14;
 }
 
 .send-parcel__header {
@@ -42,7 +42,7 @@
 }
 
 .send-parcel__info-icon:hover {
-  fill: #1d253c;
+  fill: var(--color-black);
   transition: fill 0.3s;
 }
 
@@ -52,7 +52,7 @@
 
 .send-parcel__info-message {
   border: 1px solid;
-  border-image-source: #c2d2f4 #b7c6e7;
+  border-color: var(--color-gray);
   background: #fff;
   padding: 8px 16px;
   width: 252px;

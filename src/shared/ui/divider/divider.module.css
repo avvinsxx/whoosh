@@ -1,7 +1,7 @@
 .divider {
   height: 0;
   border: 1px solid;
-  border-color: #c2d2f4 #b7c6e7;
+  border-color: var(--color-gray);
   position: relative;
 }
 

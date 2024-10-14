@@ -141,4 +141,7 @@ body {
 :root {
   --color-header: #1d253c;
   --color-text: #666;
+  --color-blue: #2b6bf3;
+  --color-black: #1d253c;
+  --color-gray: #c2d2f4;
 }

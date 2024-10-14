@@ -1,34 +1,32 @@
 .location__icon {
-    margin-right: 16px;
+  margin-right: 16px;
 }
 
 .location__link {
-    color: #666;
-    font-size: 16px;
-    line-height: 24px;
-    border-bottom: 1px dashed;
-    border-color: #C2D2F4 #B7C6E7;
-    text-decoration: none;
-    font-family: var(--font-intro-book);
+  color: #666;
+  font-size: 16px;
+  line-height: 24px;
+  border-bottom: 1px dashed;
+  border-color: var(--color-gray);
+  text-decoration: none;
+  font-family: var(--font-intro-book);
 }
 
 @media (min-width: 768px) {
-    .location:hover {
-        opacity: 70%;
-    }
+  .location:hover {
+    opacity: 70%;
+  }
 
-    .location:hover .location__link {
-        border-bottom: 1px dashed;
-        border-color: #C2D2F4 #B7C6E7;
-    }
+  .location:hover .location__link {
+    border-bottom: 1px dashed;
+    border-color: var(--color-gray);
+  }
 
-    .location__icon {
-        margin-right: 8px;
-    }
+  .location__icon {
+    margin-right: 8px;
+  }
 
-    .location__link {
-        border: none;
-    }
-
-
+  .location__link {
+    border: none;
+  }
 }

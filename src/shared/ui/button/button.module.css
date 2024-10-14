@@ -12,7 +12,7 @@
 }
 
 .button_yellow {
-  color: #1d253c;
+  color: var(--color-black);
   background-color: #ffdd2d;
 }
 
@@ -23,7 +23,7 @@
 }
 
 .button_blue {
-  background-color: #2b6bf3;
+  background-color: var(--color-blue);
   color: #fff;
 }
 

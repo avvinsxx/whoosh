@@ -1,5 +1,4 @@
 .card {
-
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -12,15 +11,15 @@
   background-color: #f8faff;
   border: 1px solid;
   border-radius: 8px;
-  border-color: #c2d2f4 #b7c6e7;
+  border-color: var(--color-gray);
 }
 
 .card_regular:hover,
 .card_regular:focus {
   background-color: #fff;
-  border-color: #2B6BF3;
+  border-color: var(--color-blue);
   border-width: 2px;
-  transition: border-color, background-color, border-width .3s, .3s, .3s;
+  transition: border-color, background-color, border-width 0.3s, 0.3s, 0.3s;
 }
 
 .card_light {

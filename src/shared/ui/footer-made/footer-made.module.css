@@ -5,7 +5,7 @@
   font-size: 14px;
   line-height: 24px;
   font-family: var(--font-intro);
-  color: #c2d2f4;
+  color: var(--color-gray);
 }
 .footer-made::before {
   position: absolute;
@@ -14,7 +14,7 @@
   left: 0;
   content: "";
   height: 2px;
-  background-color: #c2d2f4;
+  background-color: var(--color-gray);
   z-index: 0;
 }
 

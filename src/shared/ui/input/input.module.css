@@ -17,7 +17,7 @@
   display: block;
   width: 100%;
   font-family: var(--font-intro);
-  color: #1d253c;
+  color: var(--color-black);
   font-size: 16px;
   line-height: 24px;
 }

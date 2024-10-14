@@ -5,10 +5,10 @@
   line-height: 24px;
   padding: 7px 28px 7px 16px;
   border: 1px solid;
-  border-color: #c2d2f4 #b7c6e7;
+  border-color: var(--color-gray);
   border-radius: 4px;
   margin-top: 40px;
-  color: #1d253c;
+  color: var(--color-black);
   background: no-repeat right 12px center url("./assets/mobile.svg"), #fff;
 }
 
@@ -17,8 +17,8 @@
 }
 
 .track-input:focus {
-  border-color: #2b6bf3;
-  outline-color: #2b6bf3;
+  border-color: var(--color-blue);
+  outline-color: var(--color-blue);
 }
 
 @media (min-width: 1001px) {

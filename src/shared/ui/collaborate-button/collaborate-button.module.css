@@ -3,7 +3,7 @@
   font-family: var(--font-intro-book);
   font-size: 16px;
   line-height: 24px;
-  color: #1d253c;
+  color: var(--color-black);
   border: 1px solid #dde7fd;
   border-radius: 24px;
   background: none;

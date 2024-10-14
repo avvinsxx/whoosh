@@ -9,5 +9,5 @@
 
 .footer-header_underlined {
   padding-bottom: 9px;
-  border-bottom: 2px solid #c2d2f4;
+  border-bottom: 2px solid var(--color-gray);
 }

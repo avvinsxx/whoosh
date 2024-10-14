@@ -1,5 +1,5 @@
 .round {
-  box-shadow: 0px 8px 16px 0px #2b6bf329;
+  box-shadow: 0px 8px 16px 0px var(--color-blue) 29;
   border-radius: 100%;
   background-color: #fff;
   display: flex;
