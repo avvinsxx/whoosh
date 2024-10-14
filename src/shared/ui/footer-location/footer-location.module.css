@@ -1,0 +1,9 @@
+.footer-location {
+  padding-left: 24px;
+  background: no-repeat top left url("./pin.png");
+  font-family: var(--font-intro-book);
+  font-size: 14px;
+  line-height: 24px;
+  color: rgb(29, 37, 60, 0.64);
+  margin-top: 23px;
+}

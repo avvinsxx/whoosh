@@ -1,5 +1,3 @@
-import clsx from "clsx";
-
 import styles from "./h3.module.css";
 
 interface H3Props {

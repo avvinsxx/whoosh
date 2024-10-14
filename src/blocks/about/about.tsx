@@ -1,7 +1,13 @@
-import { P } from "@/src/shared/ui";
+"use client";
+
+import { useState } from "react";
+
+import { P, ShowButton } from "@/src/shared/ui";
 import styles from "./about.module.css";
 
 export default function About() {
+  const [showText, setShowText] = useState(false);
+
   return (
     <div className={styles.about}>
       <P>
@@ -21,7 +27,22 @@ export default function About() {
         can call a courier in just a minute and arrange an express courier
         delivery without unnecessary bureaucracy, negotiations and calls to the
         call center.
+        {!showText && (
+          <ShowButton clickHandler={() => setShowText(true)} alt="Show more" />
+        )}
       </P>
+      {showText && (
+        <P>
+          But at the same time, we do not limit the range of courier services
+          and without problems we can buy and bring goods and products from the
+          online store, arrange delivery for the online store, cafe,
+          supermarket, restaurant or any other business. Around the clock on our
+          website you can call a courier in just a minute and arrange an express
+          courier delivery without unnecessary bureaucracy, negotiations and
+          calls to the call center.
+          <ShowButton clickHandler={() => setShowText(false)} alt="Show less" />
+        </P>
+      )}
     </div>
   );
 }

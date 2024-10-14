@@ -1,0 +1,17 @@
+.footer-links {
+  margin-top: 21px;
+}
+
+.footer-links__link {
+  font-family: var(--font-intro-book);
+  text-decoration: none;
+  color: rgb(29, 37, 60, 0.64);
+  font-size: 14px;
+  line-height: 32px;
+}
+
+.footer-links__link:hover,
+.footer-links__link:focus {
+  opacity: 70%;
+  transition: opacity 0.3s;
+}

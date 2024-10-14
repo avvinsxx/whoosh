@@ -1,14 +1,14 @@
 .about {
-    padding: 68px 16px 52px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    max-width: 1160px;
-    margin: auto;
+  padding: 68px 16px 52px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: min(95%, 1160px);
+  margin: auto;
 }
 
 @media (min-width: 768px) {
-    .about {
-        padding: 100px 0 84px;
-    }
+  .about {
+    padding: 100px 0 84px;
+  }
 }

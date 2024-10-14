@@ -1,12 +1,18 @@
 "use client";
 
-import { useState } from "react";
 import clsx from "clsx";
 
 import styles from "./delivery-type.module.css";
 
-export function DeliveryType() {
-  const [type, setType] = useState<string>();
+interface DeliveryTypeProps {
+  deliveryType: string;
+  deliveryTypeHandler: (deliveryType: string) => void;
+}
+
+export function DeliveryType({
+  deliveryType,
+  deliveryTypeHandler,
+}: DeliveryTypeProps) {
   return (
     <>
       <div className={styles["delivery-type"]}>
@@ -14,10 +20,10 @@ export function DeliveryType() {
           className={clsx(
             styles["delivery-type__button"],
             styles["delivery-type__button_foot"],
-            type === "foot" && styles["delivery-type__button_active"]
+            deliveryType === "foot" && styles["delivery-type__button_active"]
           )}
           type="button"
-          onClick={() => setType("foot")}
+          onClick={() => deliveryTypeHandler("foot")}
         >
           <div className={styles["delivery-type__label"]}>up to 10lb</div>
         </button>
@@ -25,10 +31,10 @@ export function DeliveryType() {
           className={clsx(
             styles["delivery-type__button"],
             styles["delivery-type__button_car"],
-            type === "car" && styles["delivery-type__button_active"]
+            deliveryType === "car" && styles["delivery-type__button_active"]
           )}
           type="button"
-          onClick={() => setType("car")}
+          onClick={() => deliveryTypeHandler("car")}
         >
           <div className={styles["delivery-type__label"]}>up to 130lb</div>
         </button>
@@ -36,15 +42,14 @@ export function DeliveryType() {
           className={clsx(
             styles["delivery-type__button"],
             styles["delivery-type__button_truck"],
-            type === "truck" && styles["delivery-type__button_active"]
+            deliveryType === "truck" && styles["delivery-type__button_active"]
           )}
           type="button"
-          onClick={() => setType("truck")}
+          onClick={() => deliveryTypeHandler("truck")}
         >
           <div className={styles["delivery-type__label"]}>over 130lb</div>
         </button>
       </div>
-      <input type="hidden" value={type} />
     </>
   );
 }

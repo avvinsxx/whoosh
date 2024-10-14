@@ -1,6 +1,9 @@
+import Image from "next/image";
+
 import { Card, H1, H3, H4, P, RoundIcon } from "@/src/shared/ui";
-import { DeliveryAdvantagesList } from "@/src/features/delivery-advantages-list";
+import { DeliveryAdvantagesList } from "@/src/widgets/delivery-advantages-list";
 import styles from "./delivery.module.css";
+import route from "./route.svg";
 
 export default function Delivery() {
   return (
@@ -13,11 +16,15 @@ export default function Delivery() {
       <DeliveryAdvantagesList>
         <Card>
           <H3>Become a Courier</H3>
-          <RoundIcon
-            size="big"
-            icon="courier"
-            alt="Become a Courier"
-          ></RoundIcon>
+          <div className={styles["delivery__complex-icon"]}>
+            <RoundIcon
+              size="big"
+              icon="courier"
+              alt="Become a Courier"
+            ></RoundIcon>
+            <Image src={route} alt="Route icon" />
+          </div>
+
           <P>
             You choose a schedule. You decide how much and when to earn.
             Earnings from day one

@@ -1,0 +1,13 @@
+.footer-header {
+  text-transform: uppercase;
+  font-family: var(--font-intro);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 8%;
+}
+
+.footer-header_underlined {
+  padding-bottom: 9px;
+  border-bottom: 2px solid #c2d2f4;
+}

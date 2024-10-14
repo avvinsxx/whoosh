@@ -1,0 +1,12 @@
+.footer-socials {
+  display: flex;
+  gap: 38px;
+  justify-content: center;
+  margin-top: 26px;
+}
+
+@media (min-width: 768px) {
+  .footer-socials {
+    gap: 24px;
+  }
+}

@@ -1,0 +1,5 @@
+.show-button:hover,
+.show-button:focus {
+  opacity: 70%;
+  transition: opacity 0.3s;
+}

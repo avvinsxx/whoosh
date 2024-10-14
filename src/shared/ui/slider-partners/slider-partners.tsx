@@ -1,8 +1,10 @@
 "use client";
 
-import { useCallback, useEffect, useState } from "react";
-import Image from "next/image";
+import clsx from "clsx";
+import { EmblaCarouselType } from "embla-carousel";
 import useEmblaCarousel from "embla-carousel-react";
+import Image from "next/image";
+import { useCallback, useEffect, useState } from "react";
 
 import alva from "./assets/alva.svg";
 import fagor from "./assets/fagor.svg";
@@ -10,7 +12,6 @@ import guitar from "./assets/guitar.svg";
 import radio from "./assets/radio.svg";
 import tendo from "./assets/tendo.svg";
 import styles from "./slider-partners.module.css";
-import clsx from "clsx";
 
 export function SliderPartners() {
   const [emblaRef, emblaApi] = useEmblaCarousel({
@@ -20,10 +21,8 @@ export function SliderPartners() {
 
   const [activeSlideNumber, setActiveSlideNumber] = useState<number>();
 
-  const logSlidesInView = useCallback((emblaApi) => {
-    console.log("22222222222");
+  const handleSlideChange = useCallback((emblaApi: EmblaCarouselType) => {
     const slides = emblaApi.slidesInView();
-    console.log(emblaApi.slidesInView());
     if (slides.length === 3) {
       if (slides[2] === 4) {
         if (slides[1] === 1) {
@@ -41,11 +40,10 @@ export function SliderPartners() {
 
   useEffect(() => {
     if (emblaApi) {
-      emblaApi.on("slidesInView", logSlidesInView);
+      emblaApi.on("slidesInView", handleSlideChange);
     }
-  }, [emblaApi, logSlidesInView]);
+  }, [emblaApi, handleSlideChange]);
 
-  console.log("active", activeSlideNumber);
   return (
     <section className={styles["slider-partners"]}>
       <div className={styles["slider-partners__viewport"]} ref={emblaRef}>

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 
+import { Toaster } from "react-hot-toast";
 import "./globals.css";
 
 const intro = localFont({
@@ -56,6 +57,15 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${intro.variable} ${introBook.variable}`}>
+        <Toaster
+          position="top-center"
+          toastOptions={{
+            style: {
+              borderRadius: "10px",
+              fontFamily: "var(--font-intro)",
+            },
+          }}
+        />
         {children}
       </body>
     </html>

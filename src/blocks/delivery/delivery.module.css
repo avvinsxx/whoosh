@@ -1,12 +1,17 @@
 .delivery {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    padding: 54px 16px 64px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 54px 16px 64px;
+}
+
+.delivery__complex-icon {
+  display: flex;
+  gap: 8px;
 }
 
 @media (min-width: 768px) {
-    .delivery {
-        padding: 98px 0px 96px;
-    }
+  .delivery {
+    padding: 98px 0px 96px;
+  }
 }

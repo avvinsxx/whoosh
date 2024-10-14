@@ -1,0 +1,5 @@
+.social-link:hover,
+.social-link:focus {
+  opacity: 70%;
+  transition: opacity 0.3s;
+}

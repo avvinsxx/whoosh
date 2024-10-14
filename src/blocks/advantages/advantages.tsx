@@ -1,5 +1,5 @@
 import { Button, Card, H1, H3, H4, Link, P, RoundIcon } from "@/src/shared/ui";
-import { AdvantagesList } from "@/src/features/advantages-list";
+import { AdvantagesList } from "@/src/widgets/advantages-list";
 import styles from "./advantages.module.css";
 
 export default function Advantages() {

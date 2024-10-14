@@ -1,4 +1,104 @@
 .footer {
-    background-color: #F8FAFF;
-    padding: 45px 16px 32px;
+  background-color: #f8faff;
+  padding: 45px 16px 32px;
+}
+
+.footer__row {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 16px;
+  justify-content: center;
+}
+
+.footer__section-about {
+  width: 100%;
+  max-width: 500px;
+}
+
+.footer__about-message {
+  margin-top: 32px;
+  color: rgb(29, 37, 60, 0.64);
+  font-size: 14px;
+  line-height: 24px;
+  font-family: var(--font-intro-book);
+  padding-left: 60px;
+  background: no-repeat left top url("./assets/track.svg");
+}
+
+.footer__section-links {
+  margin-top: 32px;
+  width: calc(50% - 8px);
+  max-width: 250px;
+}
+
+.footer__section-contacts {
+  margin-top: 42px;
+  width: 100%;
+  max-width: 500px;
+}
+
+.footer__copyrights {
+  margin-top: 53px;
+}
+
+.footer__copy {
+  margin-top: 24px;
+  text-align: center;
+}
+
+.footer__logo {
+  text-align: center;
+  margin-top: 13px;
+}
+
+@media (min-width: 768px) {
+  .footer__container {
+    max-width: min(95%, 1160px);
+    margin: auto;
+  }
+
+  .footer {
+    padding: 85px 0 56px;
+  }
+
+  .footer__row {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+
+  .footer__section-about {
+    width: auto;
+    max-width: 300px;
+  }
+  .footer__section-links {
+    margin-top: 0;
+    width: min(200px, auto);
+    max-width: 200px;
+  }
+  .footer__section-contacts {
+    margin-top: 0;
+    width: auto;
+    max-width: 232px;
+  }
+
+  .footer__copyrights {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 25px;
+    justify-content: space-between;
+  }
+
+  .footer__copy {
+    order: 2;
+    width: 33%;
+    margin: 0;
+    text-align: left;
+  }
+
+  .footer__logo {
+    width: 33%;
+    order: 3;
+  }
 }

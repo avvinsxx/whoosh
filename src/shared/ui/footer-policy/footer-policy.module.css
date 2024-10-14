@@ -1,0 +1,21 @@
+.footer-policy {
+  text-align: center;
+  font-size: 14px;
+  line-height: 24px;
+  font-family: var(--font-intro-book);
+}
+
+.footer-policy__content {
+  padding-left: 23px;
+  color: rgba(29, 37, 60, 0.63);
+  text-decoration: none;
+  background: no-repeat left center url("./shield.svg");
+}
+
+@media (min-width: 768px) {
+  .footer-policy {
+    width: 33%;
+    order: 4;
+    text-align: right;
+  }
+}

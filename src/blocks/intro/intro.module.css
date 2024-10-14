@@ -1,71 +1,72 @@
 .intro {
-    background: #F8FAFF;
+  background: #f8faff;
 }
 
 .intro__container {
-    padding: 32px 16px 55px;
-    background: no-repeat url('./assets/intro-bg.svg');
-    background-position: center bottom 218px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  padding: 32px 16px 55px;
+  background: no-repeat url("./assets/intro-bg.svg");
+  background-position: center bottom 218px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .intro__about {
-    margin-top: 46px;
-    width: 100%;
-    max-width: 375px;
+  margin-top: 46px;
+  width: 100%;
+  max-width: 375px;
 }
 
 .intro__about-text {
-    margin-top: 14px;
+  margin-top: 14px;
 }
 
 .intro__about-more {
-    font-family: var(--font-intro);
-    margin-top: 14px;
-    font-size: 18px;
-    line-height: 24px;
+  font-family: var(--font-intro);
+  margin-top: 14px;
+  font-size: 18px;
+  line-height: 24px;
 }
 
 .intro__how {
-    margin-top: 37px;
+  margin-top: 37px;
 }
 
 .intro__how-image {
-    width: 100%;
-    max-width: 375px;
-    margin-top: 17px;
+  width: 100%;
+  max-width: 375px;
+  margin-top: 17px;
 }
 
 @media (min-width: 768px) {
-    .intro__container {
-        flex-direction: row-reverse;
-        justify-content: space-between;
-        padding: 36px 32px 32px;
-        max-width: 1231px;
-        margin: auto;
-        background: no-repeat url('./assets/intro-bg-full.svg');
-        background-position: center bottom;
-    }
+  .intro__container {
+    flex-direction: row-reverse;
+    gap: 15px;
+    justify-content: space-between;
+    padding: 36px 32px 32px;
+    max-width: 1231px;
+    margin: auto;
+    background: no-repeat url("./assets/intro-bg-full.svg");
+    background-position: center bottom;
+  }
 
-    .intro__about {
-        margin-top: 30px;
-    }
+  .intro__about {
+    margin-top: 30px;
+  }
 
-    .intro__about-text {
-        margin-top: 34px;
-    }
+  .intro__about-text {
+    margin-top: 34px;
+  }
 
-    .intro__about-more {
-        margin-top: 30px;
-    }
+  .intro__about-more {
+    margin-top: 30px;
+  }
 
-    .intro__how {
-        margin-top: 80px;
-    }
+  .intro__how {
+    margin-top: 80px;
+  }
 
-    .intro__how-image {
-        margin-top: 22px;
-    }
+  .intro__how-image {
+    margin-top: 22px;
+  }
 }

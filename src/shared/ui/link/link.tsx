@@ -8,7 +8,6 @@ interface LinkProps {
 }
 
 export function Link({ href, underline = false, children }: LinkProps) {
-  console.log(underline);
   return (
     <a
       href={href}
