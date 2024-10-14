@@ -8,6 +8,7 @@
     border: none;
     cursor: pointer;
     font-family: var(--font-intro);
+    display: block;
 }
 
 .button_yellow {

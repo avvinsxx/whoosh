@@ -1,0 +1,40 @@
+.track-input {
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 7px 28px 7px 16px;
+    border: 1px solid;
+    border-color: #C2D2F4 #B7C6E7;
+    border-radius: 4px;
+    margin-top: 40px;
+    color: #1D253C;
+    background: no-repeat right 12px center url('./assets/mobile.svg');
+}
+
+.track-input::placeholder {
+    color: rgba(29, 37, 60, 0.32)
+}
+
+.track-input:focus {
+    border-color: #2B6BF3;
+    outline-color: #2B6BF3;
+}
+
+
+@media (min-width: 768px) {
+    .track-input {
+        background: no-repeat right 12px center url('./assets/desktop.svg');
+        border-radius: 8px;
+        margin-top: 0;
+        font-size: 14px;
+    }
+
+    .track-input::placeholder {
+        color: rgba(29, 37, 60, 0.56)
+    }
+
+    .track-input:hover {
+        background-color: #F1F5FF;
+    }
+}

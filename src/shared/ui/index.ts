@@ -15,3 +15,5 @@ export { Info } from "./info/info";
 export { FormHeader } from "./form-header/form-header";
 export { Link } from "./link/link";
 export { CollaborateButton } from "./collaborate-button/collaborate-button";
+export { BurgerMenu } from "./burger-menu/burger-menu";
+export { Location } from "./location/location";
