@@ -7,7 +7,7 @@ import route from "./route.svg";
 
 export default function Delivery() {
   return (
-    <div className={styles.delivery}>
+    <section className={styles.delivery}>
       <H1>Express delivery market revolution</H1>
       <H4>
         Express courier service in the city. We are a reliable logistics partner
@@ -49,6 +49,6 @@ export default function Delivery() {
           <P>Door-to-door delivery in 90 minutes or at your convenience</P>
         </Card>
       </DeliveryAdvantagesList>
-    </div>
+    </section>
   );
 }

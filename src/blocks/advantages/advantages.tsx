@@ -4,7 +4,7 @@ import styles from "./advantages.module.css";
 
 export default function Advantages() {
   return (
-    <div className={styles.advantages}>
+    <section className={styles.advantages}>
       <H1>What we do</H1>
       <H4>
         Express courier service in the city. We are a reliable logistics partner
@@ -56,6 +56,6 @@ export default function Advantages() {
       <div className={styles["advantages_button-container"]}>
         <Button type="yellow">Get started</Button>
       </div>
-    </div>
+    </section>
   );
 }

@@ -3,10 +3,10 @@ import styles from "./partners.module.css";
 
 export default function Partners() {
   return (
-    <div className={styles.partners}>
+    <section className={styles.partners}>
       <H1>Our Partners</H1>
       <SliderPartners />
       <CollaborateButton />
-    </div>
+    </section>
   );
 }

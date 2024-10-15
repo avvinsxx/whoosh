@@ -7,8 +7,8 @@ interface FooterLinksProps {
 export function FooterLinks({ links }: FooterLinksProps) {
   return (
     <ul className={styles["footer-links"]}>
-      {links.map((link) => (
-        <li key={link.href}>
+      {links.map((link, index) => (
+        <li key={index}>
           <a href={link.href} className={styles["footer-links__link"]}>
             {link.label}
           </a>

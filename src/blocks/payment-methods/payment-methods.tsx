@@ -3,9 +3,9 @@ import styles from "./payment-methods.module.css";
 
 export default function PaymentMethods() {
   return (
-    <div className={styles["payment-methods"]}>
+    <section className={styles["payment-methods"]}>
       <H1>Payment method</H1>
       <SliderPayment />
-    </div>
+    </section>
   );
 }

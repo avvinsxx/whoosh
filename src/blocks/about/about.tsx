@@ -9,7 +9,7 @@ export default function About() {
   const [showText, setShowText] = useState(false);
 
   return (
-    <div className={styles.about}>
+    <section className={styles.about}>
       <P>
         Since 2019, LibertyWalk has successfully provided express courier
         delivery services in the city for both individuals and legal entities,
@@ -43,6 +43,6 @@ export default function About() {
           <ShowButton clickHandler={() => setShowText(false)} alt="Show less" />
         </P>
       )}
-    </div>
+    </section>
   );
 }

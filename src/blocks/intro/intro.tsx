@@ -1,15 +1,15 @@
 import Image from "next/image";
 
-import { SendParcel } from "@/src/widgets/send-parcel";
 import { H1, H3, Link, P } from "@/src/shared/ui";
-import styles from "./intro.module.css";
+import { SendParcel } from "@/src/widgets/send-parcel";
 import { TrackPackage } from "@/src/widgets/track-package";
 import more from "./assets/more.svg";
 import video from "./assets/video.png";
+import styles from "./intro.module.css";
 
 export default function Intro() {
   return (
-    <div className={styles.intro}>
+    <section className={styles.intro}>
       <div className={styles.intro__container}>
         <div>
           <SendParcel />
@@ -28,7 +28,7 @@ export default function Intro() {
 
           <div className={styles["intro__about-more"]}>
             <Link underline={false} href="#">
-              Read more <Image src={more} alt="Read more" />
+              Read more <Image src={more} alt="Go to full text" />
             </Link>
           </div>
 
@@ -42,6 +42,6 @@ export default function Intro() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
